@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>57782.wiki</title>
+<meta name="description" content="57782.wiki — 个人主页">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid; place-items: center; padding: 24px;
+    background: #0b1020;
+    background-image:
+      radial-gradient(60rem 40rem at 15% 0%, rgba(77,124,255,.28), transparent 60%),
+      radial-gradient(50rem 35rem at 100% 100%, rgba(0,214,170,.18), transparent 60%);
+    color: #e8ecf8;
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 620px; width: 100%; text-align: center; }
+  .badge {
+    display: inline-block; padding: 6px 12px; margin-bottom: 22px;
+    border: 1px solid rgba(255,255,255,.16); border-radius: 999px;
+    font-size: 13px; letter-spacing: .08em; color: #a9b6d6;
+  }
+  h1 {
+    margin: 0 0 14px; font-size: clamp(34px, 7vw, 56px);
+    letter-spacing: -.02em; font-weight: 700;
+    background: linear-gradient(120deg, #fff, #9fb6ff 60%, #6ef0c8);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  p.lead { margin: 0 auto 34px; max-width: 30em; color: #b6c2dd; font-size: 17px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  a.btn {
+    padding: 10px 18px; border-radius: 10px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,.14); color: #e8ecf8;
+    background: rgba(255,255,255,.05); transition: .18s;
+  }
+  a.btn:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); }
+  footer { margin-top: 48px; font-size: 13px; color: #6c7a99; }
+  footer code { color: #93a3c4; }
+</style>
+</head>
+<body>
+  <main>
+    <span class="badge">PERSONAL SITE</span>
+    <h1>57782.wiki</h1>
+    <p class="lead">这里还在搭建中。很快会放上我的介绍、作品和联系方式。</p>
+    <div class="links">
+      <a class="btn" href="mailto:hi@57782.wiki">写邮件</a>
+      <a class="btn" href="#about">关于</a>
+    </div>
+    <footer>© <span id="y">2025</span> 57782.wiki · 保留所有权利</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
